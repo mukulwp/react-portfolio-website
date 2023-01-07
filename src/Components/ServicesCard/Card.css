@@ -1,0 +1,40 @@
+.card{
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 32px 26px;
+}
+.card>img{
+    transform: scale(0.6);
+    margin-bottom: -2.5rem;
+}
+.card>h3{
+    color: var(--black);
+    font-size: 1.2rem;
+}
+.card>span{
+    color: var(--gray);
+    font-size: 1rem;
+}
+.card>.card-btn{
+    background-color: var(--black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.card>.card-btn:hover{
+    color: var(--orange);
+    transform: scale(1.05);
+}

@@ -1,0 +1,29 @@
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--black);
+    border-radius: 1rem;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+}
+.toggle>*{
+    width: 1.3rem;
+    height: 1.3rem;
+    color: var(--black);
+}
+.toggle-btn{
+    border-radius: 50%;
+    background-color: var(--black);
+    position: absolute;
+}
+.darkToggle{
+     border: 3px solid white;
+}
+.darkToggle>*{
+    color: white;
+}
+.darkToggle .toggle-btn{
+    background-color: white!important;
+}

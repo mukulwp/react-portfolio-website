@@ -1,0 +1,95 @@
+.experience{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 30rem;
+}
+.achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+   width: 4.5rem;
+   height: 4.5rem;
+   background-color: white;
+   border-radius: 50%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.circle::before{
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
+}
+.achievement>:nth-child(2){
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.achievement>:nth-child(3){
+    color: var(--orange);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .experience{
+        margin-top: 3rem;
+        height: 12rem;
+        gap: 0.6rem;
+        font-size: 0.9rem;
+    }
+    .achievement{
+       align-items: baseline;
+       margin-left: 2px;
+    }
+.circle{
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   font-size: 1.2rem;
+}
+.circle::before{
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .experience{
+        margin-top: 3rem;
+        height: 15rem;
+        gap: 3rem;
+        font-size: 1.1rem;
+    }
+    .achievement{
+       align-items: baseline;
+       margin-left: 2px;
+    }
+.circle{
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   font-size: 1.2rem;
+}
+.circle::before{
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+}
+}

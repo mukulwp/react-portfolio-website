@@ -1,0 +1,156 @@
+.services{
+    padding: 0 3rem 0rem 3rem;
+    display: flex;
+    height: 100vh;
+    margin-top: 9rem;
+    position: relative;
+}
+.section-intro{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.section-intro>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.section-intro>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+.section-intro>:nth-child(3){
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 1rem 0;
+}
+.section-intro>.s-btn{
+    width: fit-content;
+}
+.s-blur{
+    background: #abf1ff94;
+    left: -18rem;
+    top: 13rem;
+}
+.services-right{
+    flex: 1;
+}
+.services-right>.cards{
+    position: relative;
+}
+.cards>.s-card1{
+    position: absolute;
+    left: 14rem;
+}
+.cards>.s-card2{
+    position: absolute;
+    left: -6rem;
+    top: 12rem;
+}
+.cards>.s-card3{
+    position: absolute;
+    left: 13rem;
+    top: 22rem;
+}
+.s-blur2{
+    background-color: var(--purple);
+    left: 14rem;
+    top: 8rem;
+}
+
+/*Responsive */
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 1rem;
+        height: 75rem;
+    }
+    .section-intro>:nth-child(1){
+    font-size: 1.6rem;
+}
+.section-intro>:nth-child(2){
+    font-size: 2rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.cards>.s-card1{
+    position: static;
+}
+.cards>.s-card2{
+   position: static;
+}
+.cards>.s-card3{
+   position: static;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 1rem;
+        height: 75rem;
+    }
+    .section-intro>:nth-child(1){
+    font-size: 1.6rem;
+}
+.section-intro>:nth-child(2){
+    font-size: 2rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.cards>.s-card1{
+    position: static;
+}
+.cards>.s-card2{
+   position: static;
+}
+.cards>.s-card3{
+   position: static;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1060px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 1rem;
+        height: 70rem;
+    }
+    .section-intro>:nth-child(1){
+    font-size: 1.6rem;
+}
+.section-intro>:nth-child(2){
+    font-size: 2rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.cards>.s-card1{
+    position: static;
+}
+.cards>.s-card2{
+   position: static;
+}
+.cards>.s-card3{
+   position: static;
+}
+}

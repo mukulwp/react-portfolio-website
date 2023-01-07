@@ -1,0 +1,128 @@
+.nav{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    padding: 0.5rem 0;
+}
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+    position: relative;
+}
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+.n-brand a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.n-brand a span{
+    color: var(--orange);
+    font-size: 1.6rem;
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.n-list{
+    flex: 1;
+}
+.n-list ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+.n-list ul li{
+    transition: all 0.5s ease;
+}
+.n-list ul li:hover{
+    transform: scale(1.05);
+}
+.n-list ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.25rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.active{
+    color: var(--orange)!important;
+}
+.n-list ul li a:hover{
+    color: var(--orange);
+}
+.n-right .n-btn{
+   flex: 2;
+   padding: 15px 26px;
+   text-align: center;
+   width: 120px;
+}
+.hamburger-icon{
+    display: none;
+}
+
+/*Responsive */
+@media screen and (max-width: 1050px) {
+    .n-wrapper{
+        padding: 0 1rem;
+    }
+    .n-list ul{
+        flex-direction: column;
+        justify-content: start;
+        background-color: var(--gray);
+        width: 80%;
+        height: 100vh;
+        padding: 3rem 0;
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        top: 3.4rem;
+        border-top: 4px solid var(--orange);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.5s linear;
+        transform: translateX(100%);
+    }
+    .n-list ul.activeNav{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0%);
+    }
+    .n-list ul li a{
+        color: white;
+    }
+    .n-btn{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .mobile-menu-icon svg{
+        color: var(--orange);
+    }
+    .times-icon{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
